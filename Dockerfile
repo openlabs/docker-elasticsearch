@@ -9,6 +9,7 @@ RUN /elasticsearch/bin/plugin -install elasticsearch/elasticsearch-analysis-phon
 RUN /elasticsearch/bin/plugin -install polyfractal/elasticsearch-inquisitor
 RUN /elasticsearch/bin/plugin -install elasticsearch/elasticsearch-cloud-aws/2.3.0
 RUN /elasticsearch/bin/plugin -install mobz/elasticsearch-head
+RUN /elasticsearch/bin/plugin -install royrusso/elasticsearch-HQ
 
 EXPOSE 9200 9300
 ENTRYPOINT ["/elasticsearch/bin/elasticsearch"]
